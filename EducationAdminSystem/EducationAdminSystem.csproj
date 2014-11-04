@@ -382,7 +382,17 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="Web References\Passport\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Antlr3.Runtime.dll" />
@@ -472,6 +482,10 @@
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\EducationAdminSystem.csproj.GenerateResource.Cache" />
     <Content Include="obj\Debug\EducationAdminSystem.csprojResolveAssemblyReference.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -520,6 +534,7 @@
     <Content Include="Views\SchoolYears\Details.cshtml" />
     <Content Include="Views\SchoolYears\Edit.cshtml" />
     <Content Include="Views\SchoolYears\Index.cshtml" />
+    <None Include="Web References\Passport\Passport.disco" />
     <Content Include="Web.config" />
     <Content Include="Views\AdminAction\Create.cshtml" />
     <Content Include="Views\AdminAction\Edit.cshtml" />
@@ -529,6 +544,14 @@
     <Content Include="Views\Adminstrators\Details.cshtml" />
     <Content Include="Views\Adminstrators\Edit.cshtml" />
     <Content Include="Views\Adminstrators\Index.cshtml" />
+    <None Include="Web References\Passport\Passport.wsdl" />
+    <Content Include="Web References\Passport\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\Passport\UserLogInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -720,6 +743,25 @@
     <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.RemoveClassInSchoolGrade.resources" />
     <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.RemoveClassStudents.resources" />
     <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.RemoveMyClassFromStudents.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://passport.beihangsoft.cn/">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Passport\</RelPath>
+      <UpdateFromURL>http://passport.beihangsoft.cn/</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>EducationAdminSystem_Passport_Passport</CachedSettingsPropName>
+    </WebReferenceUrl>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
