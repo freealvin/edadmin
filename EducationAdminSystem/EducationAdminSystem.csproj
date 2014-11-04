@@ -323,6 +323,34 @@
     <Compile Include="Migrations\201411010937378_AddSchoolyearTitle.Designer.cs">
       <DependentUpon>201411010937378_AddSchoolyearTitle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201411030500198_AddCousewareClass.cs" />
+    <Compile Include="Migrations\201411030500198_AddCousewareClass.Designer.cs">
+      <DependentUpon>201411030500198_AddCousewareClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411040554473_AddAdminActionClass.cs" />
+    <Compile Include="Migrations\201411040554473_AddAdminActionClass.Designer.cs">
+      <DependentUpon>201411040554473_AddAdminActionClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411040639290_AddAdministrators.cs" />
+    <Compile Include="Migrations\201411040639290_AddAdministrators.Designer.cs">
+      <DependentUpon>201411040639290_AddAdministrators.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411040644589_AddAdminRoleClass.cs" />
+    <Compile Include="Migrations\201411040644589_AddAdminRoleClass.Designer.cs">
+      <DependentUpon>201411040644589_AddAdminRoleClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411040646277_AddRoleNameStringLength.cs" />
+    <Compile Include="Migrations\201411040646277_AddRoleNameStringLength.Designer.cs">
+      <DependentUpon>201411040646277_AddRoleNameStringLength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411040827583_RemoveActionFk.cs" />
+    <Compile Include="Migrations\201411040827583_RemoveActionFk.Designer.cs">
+      <DependentUpon>201411040827583_RemoveActionFk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411040858413_ChangeDataTypeOfEnabledToBool.cs" />
+    <Compile Include="Migrations\201411040858413_ChangeDataTypeOfEnabledToBool.Designer.cs">
+      <DependentUpon>201411040858413_ChangeDataTypeOfEnabledToBool.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ActionViewModel.cs" />
     <Compile Include="Models\AdminAction.cs" />
@@ -350,18 +378,100 @@
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Models\TeacherChargeClass.cs" />
     <Compile Include="Models\TeacherCourse.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\EducationAdminSystem.dll" />
+    <Content Include="bin\EducationAdminSystem.pdb" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.xml" />
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.xml" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.xml" />
+    <Content Include="bin\Microsoft.Owin.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.Google.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Google.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.xml" />
+    <Content Include="bin\Microsoft.Owin.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\Owin.dll" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Optimization.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.xml" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="bin\zh-Hans\EntityFramework.resources.dll" />
+    <Content Include="bin\zh-Hans\EntityFramework.SqlServer.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.AspNet.Identity.Core.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.AspNet.Identity.EntityFramework.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.AspNet.Identity.Owin.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.Owin.Host.SystemWeb.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.Owin.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.Owin.Security.Facebook.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.Owin.Security.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Helpers.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Mvc.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Optimization.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Razor.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.WebPages.Razor.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.WebPages.resources.dll" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="obj\Debug\EducationAdminSystem.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\EducationAdminSystem.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Global.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Global.en1.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Global1.designer.cs.dll" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="bin\EducationAdminSystem.dll.config" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\EducationAdminSystem.csproj.GenerateResource.Cache" />
+    <Content Include="obj\Debug\EducationAdminSystem.csprojResolveAssemblyReference.cache" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -552,6 +662,64 @@
     <EmbeddedResource Include="Migrations\201411010937378_AddSchoolyearTitle.resx">
       <DependentUpon>201411010937378_AddSchoolyearTitle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411030500198_AddCousewareClass.resx">
+      <DependentUpon>201411030500198_AddCousewareClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411040554473_AddAdminActionClass.resx">
+      <DependentUpon>201411040554473_AddAdminActionClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411040639290_AddAdministrators.resx">
+      <DependentUpon>201411040639290_AddAdministrators.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411040644589_AddAdminRoleClass.resx">
+      <DependentUpon>201411040644589_AddAdminRoleClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411040646277_AddRoleNameStringLength.resx">
+      <DependentUpon>201411040646277_AddRoleNameStringLength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411040827583_RemoveActionFk.resx">
+      <DependentUpon>201411040827583_RemoveActionFk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411040858413_ChangeDataTypeOfEnabledToBool.resx">
+      <DependentUpon>201411040858413_ChangeDataTypeOfEnabledToBool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddClassGradeRelationInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddClassGradeYearStudents.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddClassInSchoolGrade.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddClassInSchoool.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddClassRoomClass.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddCourseClassroomRelationInfoClass.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddCourseEnrollmentClass.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddCourseObligatory.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddCourseObligatory1.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddCourseSchoolTerm.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddGradeClass.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddGradeGradeSort.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddHomeworkClass.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddHomeworkOpenClass.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddOnlyGradesInCourse.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddSchoolTermClass.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddSchoolYearClass.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddSchoolYearClass1.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddSchoolYearDeleted.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddSchoolyearTitle.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddStudentClassRelationInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddStudentCourseClass.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddStudentHomeworkFileClass.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddTeacheClassCourseClass.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddTeacherChargeClass.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddTeacherChargeIsExpired.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddTeacherChargeSchoolYear.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddTeacherClass.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddTeacherCourseClass.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddTeacherCourseSchoolTerm.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.AddTeacherDeleted.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.DeleteClassInSchooolChargeTeacherAndStudents.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.DeleteCourseObligatory.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.DeleteCourseObligatory1.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.RemoveClassInSchoolGrade.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.RemoveClassStudents.resources" />
+    <EmbeddedResource Include="obj\Debug\EducationAdminSystem.Migrations.RemoveMyClassFromStudents.resources" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
