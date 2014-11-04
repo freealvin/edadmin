@@ -20,6 +20,12 @@
         <th>
             @Html.DisplayNameFor(model => model.CreateTime)
         </th>
+        <th>
+            是否启用
+        </th>
+        <th>
+            Edit
+        </th>
     </tr>
 
     @foreach (var item in Model)
@@ -36,6 +42,9 @@
             </td>
             <td>
                 @Html.CheckBoxFor(modelItem=>item.Enabled)
+            </td>
+            <td>
+                @Html.ActionLink("edit", "Edit", new { id=item.AdminActionId})
             </td>
         </tr>
     }
