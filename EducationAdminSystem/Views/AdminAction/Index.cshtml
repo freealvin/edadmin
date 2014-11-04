@@ -1,0 +1,42 @@
+﻿@model IEnumerable<EducationAdminSystem.Models.AdminAction>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<h2>Index</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AdminActionId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreateTime)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.AdminActionId
+            </td>
+            <td>
+                @item.Code
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateTime)
+            </td>
+            <td>
+                @Html.CheckBoxFor(modelItem=>item.Enabled)
+            </td>
+        </tr>
+    }
+</table>
